@@ -1,8 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
   const link = document.getElementById('brand-valuator-link');
   
-  // After the animation ends, remove the rainbow effect and make it plain
-  link.addEventListener('animationend', () => {
-    link.classList.add('rainbow-border-end');
+  // Add the animate class to start the animation
+  link.classList.add('animate');
+  
+  // Remove the animate class after the animation completes
+  link.addEventListener('animationend', function() {
+    link.classList.remove('animate');
   });
 });
