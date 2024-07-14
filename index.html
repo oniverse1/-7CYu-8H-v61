@@ -523,7 +523,18 @@
                     </div>
                 </div>
             </footer>
-            <div class="elfsight-app-85cdd64e-80bc-4f61-aef7-12e8bdd7dab0" data-elfsight-app-lazy></div>
+            <section class="mainpopup">
+        <div id="popupoverlay"></div>
+        <div id="popup">
+            <span id="popupcloseBtn">&times;</span>
+            <h2>Thanks for your interest.</h2>
+            <p>Our pipeline is full, with 3 clients already in the queue. To ensure you get the best service, please leave your email below. We'll notify you as soon as our expert is available.</p>
+            <form id="emailForm">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>    
+    </section>
 
 
 
@@ -555,8 +566,8 @@
     <!-- custom scripts -->
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/buttonanimate.js"></script>
-    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-
+    <script src="assets/js/popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 
 </body>
